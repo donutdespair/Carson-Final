@@ -1,0 +1,80 @@
+<head>
+  <title>Careers</title>
+    <meta charset="UTF-8">
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="unbearablestyle.css">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <script>
+function swapStyleSheet(sheet){
+  document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+  <script src="dropdown.js"></script>
+<style type>
+  
+  a {
+    color: black;
+  
+}
+</style>
+</head>
+<body>
+<h1><ul>
+  <li><a class="active" href="index.html">Home</a></li>
+         <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">About</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="story.html">Our Story</a>
+      <a href="team.html">The Team</a>
+      <a href="careers.html">We're Hiring!</a>
+  <li><a href="news.html">News</a></li>
+  <li><a href="games.html">Games</a></li>
+       <li><a href="reviews.html">Reviews</a></li>
+
+      </div>
+      <li><button onclick="swapStyleSheet('moonsidestyle.css')" class="button">Moonside Mode</button></li>
+     <li><button onclick="swapStyleSheet('unbearablestyle.css')" class="button">Normal Mode</button></li>
+</li>
+  
+</ul>
+</h1>
+<div class="logo">
+UNBEARABLE<br>GAMES<br>
+</div>
+
+
+<h2>OPEN POSITIONS</h2><br>
+<table class="positionsTable">
+  
+<table>
+  <thead>
+    <tr>
+      <th><h4>Role</h4></th>
+      <th><h4>Description</h4></th>
+    
+    </tr>
+  </thead>
+  <!--Job descriptions from Bethesda: https://jobs.zenimax.com/locations/view/4-->
+  <tbody>
+    <tr>
+      <td data-label="role"><a href="https://jobs.zenimax.com/requisitions/view/76" target="_blank">Game Programmer</a></td>
+      <td data-label="description">Unbearable is looking for talented programmers to join our team that is pushing the bleeding-edge of RPG development for the PC and consoles. In this role the Game Programmer will write and develop application specific code based on design requirements. The Game Programmer will work closely with artists, lead engine programmers, designers and producers to implement game features.</td>
+    </tr>
+    <tr>
+      <td data-label="role"><a href="https://jobs.zenimax.com/requisitions/view/987" target="_blank">VFX Artist </a></td>
+      <td data-label="description">Unbearable is looking for a talented VFX Artist with strong video game background to join our team.  This person will work closely with the project producer, project leads as well as the art director to ensure aesthetics quality is kept at the highest-level throughout all the art assets produced and throughout the product.</td>
+    </tr>
+    <tr>
+      <td data-label="role"><a href="https://jobs.zenimax.com/requisitions/view/489" target="_blank">General Application</a></td>
+      <td data-label="description">Unbearable is always interested in hearing from exceptional game industry veterans! Feel free to submit your resume to our database.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+<ul class ="footer"><li>&reg; Unbearable Games 2016</li></ul>
+</div>
+
+
+</body>
+</html>

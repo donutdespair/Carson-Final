@@ -1,0 +1,84 @@
+<head>
+	<title>Reviews</title>
+     <meta charset="UTF-8">
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="unbearablestyle.css">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<script>
+function swapStyleSheet(sheet){
+  document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+   <script src="dropdown.js"></script>
+
+  <style>
+.button2 {
+    background: url(speechbubble.png); 
+    background-size: cover;
+    background-repeat: none;
+    font-family:"Cabin Sketch", Helvetica, sans-serif;
+    height:350px;
+    width: 100%;
+    max-width:600px;
+    word-wrap:break-word;
+        border: none;
+    padding: 20px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 29px;
+    outline: none;
+}
+</style>
+</head>
+<body>
+<header></header>
+<h1><ul>
+  <li><a class="active" href="index.html">Home</a></li>
+         <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">About</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="story.html">Our Story</a>
+      <a href="team.html">The Team</a>
+      <a href="careers.html">We're Hiring!</a>
+  <li><a href="news.html">News</a></li>
+  <li><a href="games.html">Games</a></li>
+       <li><a href="reviews.html">Reviews</a></li>
+
+      </div>
+      <li><button onclick="swapStyleSheet('moonsidestyle.css')" class="button">Moonside Mode</button></li>
+     <li><button onclick="swapStyleSheet('unbearablestyle.css')" class="button">Normal Mode</button></li>
+</li>
+  
+</ul>
+</h1>
+<div class="logo">
+UNBEARABLE<br>GAMES<br>
+</div>
+
+
+<h2>REVIEWS</h2><br>
+
+<div class="reviews">
+<button onclick="changeText(this)" class="button2">Click for a random smattering of our best reviews!</button>
+</div>
+<script>
+function changeText(ele) {
+   var review=new Array(); 
+//http://www.programmerinsults.com
+   review[0]='"This is bad and you should feel bad." - PC Gamer, VELO-CITY'; 
+   review[1]='"Like a humiliating relic from the past." -  Kill Screen, PIGEON-SIM'; 
+   review[2]='"Should be buried in the desert at Alamogordo, New Mexico."\ - Polygon, BEDBUGGR'; 
+   review[3]='"Nihilism has never been less rewarding." - Village Voice, NIETZSCHERIA'; 
+   review[4]='"Obvious troll is obvious." - Feminist Frequency, GMO Test Kitchen'; 
+   review[5]='"At least they spelled the title right." - Destructoid, PIZZA RAT CHRONICLES'; 
+   review[6]='"I paid $30 of my own money for this." - Gary&#39;s Roomate Steve, SUBWAY SLEEPER';
+   var id=Math.round(Math.random()*(review.length-1)); //when you want to get a random value from the array, you multiply Math.random (which  returns a random number between 0 and 1) by the number of reviews in the array-1, so it will return values between 0 and 6; math.round returns the highest nearest integer
+   ele.innerHTML = review[id];
+}(document.getElementById("button2"));
+</script>
+<br><br>
+<ul class ="footer"><li>&reg; Unbearable Games 2016</li></ul>
+</div>
+</body>
+</html>

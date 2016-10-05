@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News</title>
+     <meta charset="UTF-8">
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="unbearablestyle.css">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<script>
+function swapStyleSheet(sheet){
+  document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+   <script src="dropdown.js"></script>
+<style>
+  a {
+    color: white;
+  
+}</style>
+</head>
+<body>
+<h1><ul>
+  <li><a class="active" href="index.html">Home</a></li>
+         <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">About</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="story.html">Our Story</a>
+      <a href="team.html">The Team</a>
+      <a href="careers.html">We're Hiring!</a>
+  <li><a href="news.html">News</a></li>
+  <li><a href="games.html">Games</a></li>
+       <li><a href="reviews.html">Reviews</a></li>
+
+      </div>
+      <li><button onclick="swapStyleSheet('moonsidestyle.css')" class="button">Moonside Mode</button></li>
+     <li><button onclick="swapStyleSheet('unbearablestyle.css')" class="button">Normal Mode</button></li>
+</li>
+  
+</ul>
+</h1>
+<div class="logo">
+UNBEARABLE<br>GAMES<br>
+</div>
+
+
+<h2>NEWS</h2><br>
+<div><h3>We’re Hiring!</h3>
+<h4>09.14.16</h4>
+<p>So far in 2016 Unbearable Games released six indie games in the span of eight months. We also kept growing our thriving virtual fan community, moved into a new studio space in DUMBO, and began exploring mobile development. 
+<br><br>
+As we plan ahead for 2016 and beyond, we are looking to grow our team. We’re planning to build out our existing core teams and expand to new areas.
+<br><br>
+Have a look at our hiring page to see which opportunity is right for you. If you decide to apply, you’ll be joining a unique organization, with a collaborative approach to building beautiful and intriguing products.
+<br><br>
+To learn more about our current team, click <a href="careers.html">here</a>.</p></div>
+<br>
+<div><h3>Take to the streets on on October 1st!</h3>
+<h4>08.29.16</h4>
+<p>It’s almost time! In a little over a month Velo-City is coming to a computer near you. In this exciting new game, you will play as a bike messenger battling your way through New New York in 2099. It's a lot like being a bike messenger today, except you’ll be battling mutants and exploring the future! This game will be dangerous, grimey, low-paying, and with even more opportunities for bike justice! 
+<br><br>
+Velo-City is the ultimate RPG experience. Not only is the landscape breathtakingly decrepit, but we’ve created a dramatic profile for New New York: glaring lights, creepy allies, and even a cameo by pizza rat. Vehicles break down, parts fall off, and customers explode in exciting new ways! 
+</p></div>
+
+<br><br>
+<ul class ="footer"><li>&reg; Unbearable Games 2016</li></ul>
+</div>
+</body>
+</html>

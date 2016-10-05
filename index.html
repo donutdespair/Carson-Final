@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+    <meta charset="UTF-8">
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="unbearablestyle.css">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<script>
+function swapStyleSheet(sheet){
+  document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+   <script src="dropdown.js"></script>
+
+</head>
+<body>
+<h1><ul>
+  <li><a class="active" href="index.html">Home</a></li>
+         <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">About</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="story.html">Our Story</a>
+      <a href="team.html">The Team</a>
+      <a href="careers.html">We're Hiring!</a>
+  <li><a href="news.html">News</a></li>
+  <li><a href="games.html">Games</a></li>
+       <li><a href="reviews.html">Reviews</a></li>
+
+      </div>
+      <li><button onclick="swapStyleSheet('moonsidestyle.css')" class="button">Moonside Mode</button></li>
+     <li><button onclick="swapStyleSheet('unbearablestyle.css')" class="button">Normal Mode</button></li>
+</li>
+  
+</ul>
+</h1>
+<div class="logo">
+UNBEARABLE<br>GAMES<br>
+</div>
+
+
+<h2>RECENT UPDATES</h2><br>
+<div><h3>PIX 11 Visits Unbearable Games</h3>
+<h4>10.01.16</h4>
+<p>
+We recently visited with local news station PIX 11 in New York, where Unbearable Games has been established and creating indie computer games for several years. Pizza Rat Chronicles is mainly developed here, with the aid of a smaller team in New Jersey.
+<br><br>
+PIX 11 gets a rare insight into life at our DUMBO studio, and speaks to Game Director Tania Schafer, General Manager Amanda Spark and HR Manager Peter Paul. Here’s their story.</p></div>
+<br>
+<div><h3>Unbearable Games Returns Cold Brew Kegerator</h3>
+<h4>09.28.16</h4>
+<p>It was a mistake everyone. This is why we can't have nice things, Gary. Now we all know the sypmtoms of caffeine intoxication.
+</p></div>
+<br>
+<div><h3>Unbearable Games Office Gets Cold Brew Kegerator</h3>
+<h4>09.27.16</h4>
+<p>WE HAVE SO MUCH COLD BREW! We recently had a cold brew filled kegerator installed in the office and now only drink coffee because why drink water when there is delicious, life giving wakey juice on tap and flowing through our office at a frosty 38 degrees fahrenheit, it's super chilled in a giant barrel people and boy is it awesome. Oh man, my vision is getting kinda blury and I'm really sweaty.
+</p></div>
+<br><br>
+<ul class ="footer"><li>&reg; Unbearable Games 2016</li></ul>
+</div>
+</body>
+</html>

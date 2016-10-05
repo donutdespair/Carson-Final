@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Games</title>
+ <meta charset="UTF-8">
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="unbearablestyle.css">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<script>
+function swapStyleSheet(sheet){
+  document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+<script src="dropdown.js"></script>
+
+
+</head>
+
+
+<body>
+<h1><ul>
+  <li><a class="active" href="index.html">Home</a></li>
+         <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">About</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="story.html">Our Story</a>
+      <a href="team.html">The Team</a>
+      <a href="careers.html">We're Hiring!</a>
+  <li><a href="news.html">News</a></li>
+  <li><a href="games.html">Games</a></li>
+       <li><a href="reviews.html">Reviews</a></li>
+
+      </div>
+      <li><button onclick="swapStyleSheet('moonsidestyle.css')" class="button">Moonside Mode</button></li>
+     <li><button onclick="swapStyleSheet('unbearablestyle.css')" class="button">Normal Mode</button></li>
+</li>
+  
+</ul>
+</h1>
+<div class="logo">
+UNBEARABLE<br>GAMES<br>
+</div>
+
+<h2>GAMES</h2><br>
+<!-- Images:
+pizza https://s-media-cache-ak0.pinimg.com/564x/19/29/ec/1929ecf9161590d49d3394fe9954d3a7.jpg
+messenger http://media.gettyimages.com/videos/wide-shot-tracking-shot-bike-messenger-riding-through-times-square-at-video-id707-26?s=640x640
+rat https://uproxx.files.wordpress.com/2015/09/shutterstock_87081761.jpg
+pigeon rat http://orig01.deviantart.net/839f/f/2013/164/7/b/pigeon_rat_by_klappscheinwerfer-d68ukbh.jpg
+sleeper http://spoilednyc.com/wp-content/uploads///2015/12/15/sleepingonsubwaygoonduded-3146.jpg
+bedbug http://bedbugscrusher.com/wp-content/uploads/2013/10/Bed-Bug-Graphic.png
+Edited with http://c64.superdefault.com/-->
+<div class="slideshow">
+<!--the figure element specifies self-contained content, like pictures; this tag always wraps someting else;
+   it is helpful particularly when using a caption since figcaption can be wrapped into the same block of code; figure and figcaption are then referenced as a single unit in the flow of the document; the content then does not inherit structural attributes of ancestors and can contain its own headings without affecting the rest of the page-->
+    <figure class="slides">
+        <img src="bikemess.png" width="100%" /><figcaption><h3>VELO-CITY</h3>You are a bike messenger in New New York in the year 2099. It's a lot like being a bike messenger today. Dangerous, grimey, low-paying, but now you have to fight mutants along your route.</figcaption> 
+    </figure>
+  <figure>
+    <img src="pigeonsim.png" width="100%" /><figcaption><h3>PIGEON-SIM</h3>Play as one of twelve city-hardened pigeons and fight to become the pigeon-king. Dodge busses, escape hawks, eat garbage, terrify humans, and more in your quest to the top of the pecking order.</figcaption> 
+    </figure>
+    <figure>
+        <img src="pizzarat.png" width="100%" /><figcaption><h3>PIZZA RAT CHRONICLES</h3>Out of the subway and onto the cheese! Consume pizza from subway stairs and trash cans or score extra points by snagging slices from horrified tourists, indifferent locals, and irate delivery staff.</figcaption> 
+    </figure>
+  <figure>
+        <img src="pigeonrat.png" width="100%" /><figcaption><h3>GMO Test Kitchen</h3>Unleash your inner mad scientist in this creature creation escapade. Engineer exciting animals like pigeon-rats, cat-dogs, beetle-snakes, and more! Then unleash your beasts to level cities and wreak havoc.</figcaption> 
+    </figure>
+  <figure>
+        <img src="bedbug.png" width="100%" /><figcaption><h3>BEDBUGGR</h3>Play as the hematophagous cimex lectularius in a new luxury high rise. Infest the building and feed before your human hosts catch on. Avoid detection and spawn rapidly to win!</figcaption> 
+    </figure>
+  <figure>
+        <img src="sleeper.png" width="100%" /><figcaption><h3>SUBWAY SLEEPER</h3>Catch a few winks on your commute! Monitor the straphanger rage-meter and move seats before you get clocked. Earn points for weird positions and simultaneously inconveniencing multiple riders.</figcaption> 
+    </figure>
+      <figure>
+        <img src="pizzadel.png" width="100%" /><figcaption><h3> NIETZSCHERIA</h3>You play a nihilistic pizzeria employee. There is no objective. You could make pizzas but why bother when all that awaits you ultimately is death. Alone. Likely in this pizzeria.</figcaption> 
+    </figure>
+  <span class="prev">&laquo;</span>
+  <span class="next">&raquo;</span>
+</div>  
+
+<script>
+(function(){
+  
+var slideIndex = 0, 
+    items = document.querySelectorAll('.slideshow figure'), 
+    // contains all slides, querySelectorAll() method returns all elements in the document that match selector '.slideshow figure'
+    numItems = items.length; 
+    // total number of slides
+
+
+
+// this function cycles through the slides, hides inactive
+var showCurrent = function(){
+var itemToShow = Math.abs(slideIndex%numItems);
+  // Math.abs() returns absolute value (no negative numbers, like if you click previous past 0, you would be at a negative number but absoulute values are always positive); uses remainder operator to get the index of the element to show 
+
+  Array.prototype.forEach.call( items, function(el){
+    el.classList.remove('slides');
+  });
+  // Array.prototype is an array constructor; it allows you to assign methods to the array
+  // forEach is a function which takes a function as its input
+  // .call is a function which gets called on other functions
+  // classList.add() and classList.remove() add/remove the “show” class
+  
+  items[itemToShow].classList.add('slides');    
+}; 
+
+document.querySelector('.next').addEventListener('click', function() {
+     slideIndex++;
+     showCurrent();
+  }, false);
+
+document.querySelector('.prev').addEventListener('click', function() {
+     slideIndex--;
+     showCurrent();
+  }, false);
+// querySelector() method returns the first element that matches a specified CSS selector, in this case .next (same for .prev)
+// addEventListener() method attaches an event handler to .next and .prev; 'click' is the event
+// increment (++) operator increments (adds one to) its operand (slideIndex) and returns a value (shows next slide)
+// decrement (--) operator decrements (subtracts one from) its operand (slideIndex) and returns a value (shows previous slide)
+  
+})();  
+
+
+</script>
+<br><br>
+<ul class ="footer"><li>&reg; Unbearable Games 2016</li></ul>
+</div>
+</body>
+</html>

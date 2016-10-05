@@ -1,0 +1,366 @@
+@import 'https://fonts.googleapis.com/css?family=Cabin+Sketch|Amatic+SC|Josefin+Slab';
+body {
+  color: white;
+  text-align: center;
+  background: #232323;
+}
+
+h2{
+font-family: "Amatic SC", Helvetica, sans-serif;
+font-size: 55px; 
+letter-spacing: 3px;
+color: white;
+background-color: rgb(51,95,69);
+display: block;
+margin: 0 auto;
+max-width: 450px;
+border-radius: 12px;
+}
+
+h3{
+font-family: "Cabin Sketch", Helvetica, sans-serif;
+font-size: 35px; 
+letter-spacing: 3px;
+color: white;
+background-color: transparent;
+display: block;
+margin: 0 auto;
+max-width: 450px;
+}
+h4{
+font-family: "Cabin Sketch", Helvetica, sans-serif;
+font-size: 35px; 
+letter-spacing: 2px;
+color: white;
+background-color: transparent;
+display: block;
+margin: 0 auto;
+max-width: 450px;
+}
+
+h5{
+font-family: "Cabin Sketch", Helvetica, sans-serif;
+font-size: 30px; 
+letter-spacing: 3px;
+color: white;
+background-color: transparent;
+display: block;
+margin: 0 auto;
+max-width: 450px;
+}
+
+h6{
+font-family: "Cabin Sketch", Helvetica, sans-serif;
+font-size: 20px; 
+letter-spacing: 2px;
+color: white;
+background-color: transparent;
+display: block;
+margin: 0 auto;
+max-width: 450px;
+}
+
+p{
+font-family: "Josefin Slab", Helvetica, sans-serif;
+font-size: 20px; 
+color: white;
+background-color: #432918;
+display: block;
+margin: 0 auto;
+max-width: 650px;
+border-radius: 12px;
+padding: 10px;
+position: relative;
+}
+
+.logo {
+	font-size: 100px; 
+	font-weight: 300;
+	color: white;
+	font-family: "Cabin Sketch", Helvetica, sans-serif;
+	letter-spacing: 3px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 12px;
+	position: relative;
+  z-index: -1;
+  /* https://openclipart.org/detail/235374/roaring-bear-mascot-remix*/
+	background-image: url("bear.png");
+	background-repeat: no-repeat;
+  background-position: center;  
+  background-size: contain;
+	opacity: .7;
+  pointer-events: none;
+
+}
+/*nav bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: "Cabin Sketch";
+
+  }
+ul.footer li{   
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: "Cabin Sketch";
+    padding: 14px;
+}
+
+li {
+    display: inline-block;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: rgb(212, 214, 216);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(51,95,69);
+    border-radius: 20px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #432918;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: rgb(212, 214, 216);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: rgb(51,95,69);}
+
+.show {display:block;}
+
+  .button {
+    background-color: transparent; 
+    font-family:"Cabin Sketch", Helvetica, sans-serif;
+
+    border: none;
+    color: teal;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    outline: none;}
+/*careers*/
+table {
+    border: 0;
+    width: 75%;
+    margin:auto;
+    padding:0;
+    border: transparent;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: black;
+    font-family: "Josefin Slab", Helvetica, sans-serif;
+    font-size: 18px;
+   
+
+  }
+
+  tr:nth-child(even) {
+    background: #F3DABF;
+  
+   }
+  tr:nth-child(odd) {
+    background: #B17F4A;
+  
+  }
+  
+  table tr {
+    padding: 10px;
+ 
+  border: transparent;
+}
+
+
+
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+    
+    
+
+  }
+
+  table th {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: #432918; 
+   border: 0;
+
+  }
+
+/*team*/
+#team {
+    max-width:800px;
+    margin:0 auto; 
+    padding:0;
+    list-style:none;
+    background-color: #432918;
+    border-radius: 20px;
+}
+#team li {
+    display: inline-block;
+    float: left;
+    width:50%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+
+    
+}
+        
+.team-cell {
+    margin:.5px;
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+.team-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transition:all 1s;
+    border-radius: 20px;
+}
+        
+.team-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(51,95,69);
+    opacity:0;
+    border-radius: 20px;
+    transition:all 0.6s;
+}
+#team li:hover .team-overlay {
+    opacity:0.8;
+}
+
+.team-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-size:18px;
+    font-family: "Josefin Slab", Helvetica, sans-serif;
+    top:40%;
+    color:white;
+    opacity:0;
+    transform:translateY(-20px); /*--translateY() CSS function moves the element vertically on the plane; the text moves down*/
+    transition:all .3s;
+}
+#team li:hover .team-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+/*games*/
+.slideshow{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    
+
+    min-width: 400px;
+}
+
+img {
+    border-radius: 20px;}
+
+figure{ /*the figure element specifies self-contained content, like pictures; this tag always wraps someting else;
+   it is helpful particularly when using a caption since figcaption can be wrapped into the same block of code; figure 
+   and figcaption are then referenced as a single unit in the flow of the document; the content then does not inherit structural 
+   attributes of ancestors and can contain its own headings without affecting the rest of the page*/
+    position: absolute; 
+    opacity: 0;
+    transition: 1s opacity;
+
+}
+figcaption{
+    position: static;
+    max-width: 640px;
+    font-family: "Josefin Slab", Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background:  #232323;
+    border-radius: 2px;
+    
+}
+
+.slides{
+    opacity: 1;
+    position: static;
+    transition: 1s opacity;
+    max-width: 640px;
+ 
+
+
+}
+.next, .prev{
+    color: #fff;
+    position: absolute;
+    background: rgba(0,0,0, .6);
+    top: 30%;
+    z-index: 1;
+    font-size: 40px;
+    opacity: .3;
+    
+}
+.next:hover, .prev:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.next{
+    right: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.prev{
+    left: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+ 
+/*footer*/ 
+.footer {
+  font-family: "Josefin Slab", Helvetica, sans-serif;
+font-size: 25px; 
+color: white;
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Story</title>
+	 <meta charset="UTF-8">
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="unbearablestyle.css">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<script>
+function swapStyleSheet(sheet){
+  document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+   <script src="dropdown.js"></script>
+
+</head>
+<body>
+<h1><ul>
+  <li><a class="active" href="index.html">Home</a></li>
+         <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">About</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="story.html">Our Story</a>
+      <a href="team.html">The Team</a>
+      <a href="careers.html">We're Hiring!</a>
+  <li><a href="news.html">News</a></li>
+  <li><a href="games.html">Games</a></li>
+       <li><a href="reviews.html">Reviews</a></li>
+
+      </div>
+      <li><button onclick="swapStyleSheet('moonsidestyle.css')" class="button">Moonside Mode</button></li>
+     <li><button onclick="swapStyleSheet('unbearablestyle.css')" class="button">Normal Mode</button></li>
+</li>
+  
+</ul>
+</h1>
+<div class="logo">
+UNBEARABLE<br>GAMES<br>
+</div>
+
+
+<h2>OUR STORY</h2><br>
+<div><h3>Unbearable Origins</h3>
+<p>Unbearable games was born shortly after the great New York Snowicane of Fall 2015. Our heroes were in Bertrand's basement hyped on Diet Mountain Dew and sriracha flavored mini rice cakes when the internet went down and they were not able to update the XBOX One's firmware. Trapped in Bertrand's comically small studio with no entertainment, they broke out their laptops and started to kicking around ideas for a game and programmed a simple Choose Your Own Adventure text game about readying supplies and surviving a Snowicane. They liked making games so much they took a huge "loan" from Juniper's parents and Unbearable was born. </p></div>
+<br>
+<div><h3>Absurdly Dedicated</h3><p>Here at Unbearable, we are dedicated to the art of the absurd. And Diet Mountain Dew. We make games about despair, ubran ecology, bikes, and food. Usually, a combination of these elements. 
+</p></div>
+
+<br><br>
+<ul class ="footer"><li>&reg; Unbearable Games 2016</li></ul>
+</div>
+</body>
+</html>
